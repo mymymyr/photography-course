@@ -6,16 +6,12 @@ const headerContainer = document.querySelector(".header__container");
 burgerMenu.addEventListener("click", () => {
   const screenWidth = window.screen.width;
   if (headerMenu.style.display === "flex") {
-    burgerMenu.style.background = `url("../images/burger-menu.svg") no-repeat center / cover`;
-    burgerMenu.style.width = "32px";
-    burgerMenu.style.height = "23px";
     headerMenu.style.display = "none";
+    burgerMenu.classList.remove("header__burger-menu_opened");
     headerContainer.style.width = "100%";
     headerLogo.style.display = "block";
   } else {
-    burgerMenu.style.background = `url("../images/burger-menu-opened.svg") no-repeat center / cover`;
-    burgerMenu.style.width = "27px";
-    burgerMenu.style.height = "40px";
+    burgerMenu.classList.add("header__burger-menu_opened");
     headerMenu.style.display = "flex";
     headerMenu.style.justifyContent = "center";
     if(screenWidth >= 768) {
@@ -59,10 +55,13 @@ function handleTabletChange() {
   if ((screenWidth >= 1440) && (headerMenu.style.display === "flex")) {
     headerLogo.style.display = "block";
     headerMenu.style.justifyContent = "end";
+    burgerMenu.classList.remove("header__burger-menu_opened");
   } else if ((screenWidth >= 768) && (headerMenu.style.display === "flex")) {
+    burgerMenu.classList.add("header__burger-menu_opened");
     headerLogo.style.display = "none";
     headerMenu.style.justifyContent = "start";
   }  else if ((screenWidth >= 320) && (headerMenu.style.display === "flex")) {
+    burgerMenu.classList.add("header__burger-menu_opened");
     headerLogo.style.display = "block";
     headerMenu.style.justifyContent = "center";
   }
