@@ -1,0 +1,9 @@
+.page {
+  font-family: $font-family;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  max-width: 1440px;
+  min-width: 320px;
+  color: $black-font;
+  margin: 0 auto;
+}

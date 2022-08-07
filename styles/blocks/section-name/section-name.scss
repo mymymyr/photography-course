@@ -1,0 +1,21 @@
+.section-name {
+  text-transform: uppercase;
+  @include font(400, 14, 20);
+  border-top: 1px solid #000000;
+  margin: 0;
+  padding: 20px 0 30px 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-name {
+    @include font(400, 18, 28);
+    border-top: none;
+    padding: 0 0 40px 6px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-name {
+    padding: 0 0 50px 4px;
+  }
+}

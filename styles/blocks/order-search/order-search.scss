@@ -1,0 +1,17 @@
+.order-search {
+  padding: $padding-section;
+}
+
+@media screen and (min-width: 768px) {
+  .order-search {
+    padding: $padding-section-tablet;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .order-search {
+    padding: $padding-section-desktop;
+    @include grid;
+    column-gap: 318px;
+  }
+}

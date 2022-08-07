@@ -1,0 +1,6 @@
+.header__link {
+  text-decoration: none;
+  display: flex;
+  color: $white-font;
+  @include font(400, 16, 24);
+}

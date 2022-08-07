@@ -1,0 +1,20 @@
+.enroll {
+  padding: $padding-section;
+  background-color: $red-bg;
+  color: $white-font;
+}
+
+@media screen and (min-width: 768px) {
+  .enroll {
+    padding: $padding-section-tablet;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .enroll {
+    padding: $padding-section-desktop;
+    padding-left: 229px;
+    padding-bottom: 34px;
+    position: relative;
+  }
+}
