@@ -73,5 +73,4 @@ const sectionsButtonsPaths = ["#composition", "#enroll", "#enroll"];
 
 sectionsButtons.forEach((el, index) => {
   el.onclick = () => document.location = sectionsButtonsPaths[index];
-  console.log(el.onclick);
 });
