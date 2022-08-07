@@ -14,7 +14,7 @@ burgerMenu.addEventListener("click", () => {
     burgerMenu.classList.add("header__burger-menu_opened");
     headerMenu.style.display = "flex";
     headerMenu.style.justifyContent = "center";
-    if(screenWidth >= 768) {
+    if (screenWidth >= 768) {
       headerLogo.style.display = "none";
       headerMenu.style.justifyContent = "start";
       headerContainer.style.width = "auto";
@@ -60,7 +60,7 @@ function handleTabletChange() {
     burgerMenu.classList.add("header__burger-menu_opened");
     headerLogo.style.display = "none";
     headerMenu.style.justifyContent = "start";
-  }  else if ((screenWidth >= 320) && (headerMenu.style.display === "flex")) {
+  } else if ((screenWidth >= 320) && (headerMenu.style.display === "flex")) {
     burgerMenu.classList.add("header__burger-menu_opened");
     headerLogo.style.display = "block";
     headerMenu.style.justifyContent = "center";
@@ -68,3 +68,10 @@ function handleTabletChange() {
 };
 
 
+const sectionsButtons = document.querySelectorAll(".button");
+const sectionsButtonsPaths = ["#composition", "#enroll", "#enroll"];
+
+sectionsButtons.forEach((el, index) => {
+  el.onclick = () => document.location = sectionsButtonsPaths[index];
+  console.log(el.onclick);
+});
