@@ -1,0 +1,10 @@
+.enroll__container {
+  display: flex;
+  min-height: 50px;
+}
+
+@media screen and (min-width: 1440px) {
+  .enroll__container {
+    margin-left: 5px;
+  }
+}

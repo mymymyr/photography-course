@@ -1,0 +1,18 @@
+.composition {
+  padding: $padding-section;
+  background-color: $yellow-bg;
+}
+
+@media screen and (min-width: 768px) {
+  .composition {
+    padding: $padding-section-tablet;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .composition {
+    padding: $padding-section-desktop;
+    @include grid;
+  }
+}
+

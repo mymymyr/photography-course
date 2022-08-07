@@ -1,0 +1,16 @@
+.photo-course {
+  padding: 14px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .photo-course {
+    padding: $padding-section-tablet;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .photo-course {
+    padding: $padding-section-desktop;
+    @include grid;
+  }
+}

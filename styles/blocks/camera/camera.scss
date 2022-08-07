@@ -1,0 +1,19 @@
+.camera {
+  padding: $padding-section;
+  background-color: $black-bg;
+  color: $white-font;
+}
+
+@media screen and (min-width: 768px) {
+  .camera {
+    padding: $padding-section-tablet;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .camera {
+    padding: $padding-section-desktop;
+    @include grid;
+  }
+}
+

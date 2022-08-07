@@ -1,0 +1,19 @@
+.footer {
+  background-color: $red-bg;
+  color: $white-bg;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    min-height: 104px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    min-height: 124px;
+  }
+}

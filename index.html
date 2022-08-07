@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курс по фотографии</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a class="header__link" href="./index.html">
+        <img class="header__logo" src="./images/logo-arrow.svg" alt="Логотип в виде стрелки">
+      </a>
+      <button class="header__burger-menu" type="button"></button>
+    </div>
+    <nav class="header__menu">
+      <ul class="header__items">
+        <li class="header__item"><a class="header__link" href="#composition">Композиция</a></li>
+        <li class="header__item"><a class="header__link" href="#camera">Камера</a></li>
+        <li class="header__item"><a class="header__link" href="#order-search">Поиск заказов</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="photo-course">
+      <h1 class="photo-course__title">Курс по фотографии</h1>
+      <img class="image" src="./images/photo-course-forest.jpg" alt="Лес">
+      <p class="photo-course__text">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
+      <button class="button" type="button">Подробнее</button>
+    </section>
+    <section class="composition" id="composition">
+      <h3 class="section-name">Композиция</h3>
+      <h2 class="composition__title">Изучите композицию</h2>
+      <img class="image image_place_composition" src="./images/composition-forest.jpg" alt="Лес">
+      <p class="composition__text">Вы изучите гармоничное размещение всех элементов изображения на <span
+          class="text-bold">снимке.</span></p>
+      <p class="composition__text">Изучите композицию интуитивную
+        и какие-то определённые законы.</p>
+      <button class="button" type="button">Записаться!</button>
+      <ul class="composition__items">
+        <li class="composition__item">Правило третей, при котором нужно распологать объекты на пересечениях.</li>
+        <li class="composition__item">Простота: убирай всё лишнее и кадрируй!</li>
+        <li class="composition__item">Равновесие: уравновесь пятна объекта и фона.</li>
+        <li class="composition__item">3D глубина кадра: расположи объект позади и перед другими предметами.</li>
+      </ul>
+    </section>
+    <section class="camera" id="camera">
+      <h3 class="section-name section-name_theme_dark">Камера</h3>
+      <h2 class="camera__title">Настройка Съемка Обработка</h2>
+      <img class="image image_place_camera" src="./images/camera-forest.jpg" alt="Лес">
+      <p class="camera__text">Отзывы про часть о камерах:</p>
+      <ul class="camera__items">
+        <li class="camera__item">
+          <p class="camera__text-feedback">На этом курсе я научился пользоватся камерой, как настоящий профессионал!</p>
+          <p class="camera__name-feedback">Питер, водитель.</p>
+          <p class="camera__mail-feedback">@piter123</p>
+        </li>
+        <li class="camera__item">
+          <p class="camera__text-feedback">супер крутой курс! на&nbsp;части про фотики я стал разбираться в
+            предназначении
+            кнопок</p>
+          <p class="camera__name-feedback">Джон, спортсмен.</p>
+          <p class="camera__mail-feedback">@john_sport</p>
+        </li>
+      </ul>
+    </section>
+    <section class="order-search" id="order-search">
+      <h3 class="section-name">Поиск заказов</h3>
+      <h2 class="order-search__title">Научим находить заказы!</h2>
+      <img class="image image_place_order-search" src="./images/order-search-forest.jpg" alt="Лес">
+      <p class="order-search__text">Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое
+        портфолио, мы поможем найти постоянную работу.</p>
+      <button class="button button_place_order-search" type="button">Записаться!</button>
+    </section>
+    <form class="enroll" id="enroll" name="enroll">
+      <label class="enroll__label" for="email">Записаться!</label>
+      <label class="enroll__label" for="email">Сейчас!</label>
+      <div class="enroll__container">
+        <input class="enroll__input" id="email" type="email" name="email" placeholder="Ваша почта" required>
+        <button class="enroll__send-button" type="submit">Записаться!</button>
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">2022 Photo-lessons.</p>
+  </footer>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
