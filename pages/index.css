@@ -565,6 +565,7 @@ template {
 }
 .button {
   cursor: pointer;
+  color: #000000;
   border: 2px solid #000000;
   border-radius: 9999px;
   min-width: 169px;
@@ -1031,6 +1032,7 @@ template {
   font-weight: 400;
   font-size: 11px;
   line-height: 24px;
+  color: #000000;
   border-radius: 0px 8px 8px 0px;
   border: 2px solid #000000;
   border-left: none;

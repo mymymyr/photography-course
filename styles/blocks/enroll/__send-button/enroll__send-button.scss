@@ -1,6 +1,7 @@
 .enroll__send-button {
   cursor: pointer;
   @include font(400, 11, 24);
+  color: $black-font;
   border-radius: 0px 8px 8px 0px;
   border: 2px solid #000000;
   border-left: none;
